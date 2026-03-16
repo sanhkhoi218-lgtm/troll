@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Đạt</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e32020;
+        }
+        .box {
+            background-color: yellow;
+            padding: 100px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 1s;
+        }
+        button:hover {
+            background-color: #000408;
+        }
+        #message {
+            margin-top: 20px;
+            color: #22c848;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h1>Hi! 👋</h1>
+        <p>Huỳn hbấm cái nút bên dưới đi:</p>
+        <button onclick="chaoHoi()">Bấm vào đây!</button>
+        <div id="message"></div>
+    </div>
+
+    <script>
+        function chaoHoi() {
+            // Lấy vị trí để hiển thị tin nhắn
+            const vungHienThi = document.getElementById("message");
+            
+            // Thay đổi nội dung khi bấm nút
+            vungHienThi.innerHTML = "Hello Huỳnh";
+            
+            // Hiện một thông báo nhỏ (alert)
+            alert("Đây là trang web của Hữu Đạt");
+        }
+    </script>
+
+</body>
+</html>
